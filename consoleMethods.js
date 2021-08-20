@@ -13,6 +13,8 @@ console.table({
     thirdFloor:'Singh & Family',
     fourthFloor:'manik & Family',
 })
+
+// Throws an error
 console.error('Error found in line 10')
 
 // last time to calculate the ending of the code
