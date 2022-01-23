@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos changing color while clicked</title>
+    <style>
+        li{
+            background-color: indigo;
+            color: white;
+            width: 30%;
+            height: 20%;
+            margin: 10px 0px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .btn{
+            width: 10%;
+            height: 5%;
+            font-size: 15px;
+            background-color: black;    
+            color: white;
+            outline: none;
+            border: none;
+            transition: 0.5s ease;
+            border: 2px solid black;
+            margin: 3px 0px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+            transition: 0.5s ease;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="todos">
+        <ul class="getlist">
+            <li>Buy some milk</li>
+            <li>Get a new fridge</li>
+            <li>Move your mouse</li>
+            <li>wear your socks</li>
+        </ul>
+        
+            <button class="click btn">Change</button>
+            <button class="reset btn">reset</button>
+    </div>
+
+
+
+    <script>
+        const button = document.querySelector('.click');
+        const getlist = document.querySelector('.getlist');
+        const reset = document.querySelector('.reset');
+        let index = 0;
+        button.addEventListener('click',()=>{
+
+            ((Array.from(getlist.children))[index]).style.backgroundColor = 'red';
+            index ++;
+            if(index === 4){
+                index = 0;
+            }
+        })
+
+        reset.addEventListener('click',()=>{
+            index = 0;
+            (Array.from(getlist.children)).forEach((element)=>{
+                element.style.backgroundColor = 'indigo';
+            })
+        })
+    </script>
+</body>
+</html>
