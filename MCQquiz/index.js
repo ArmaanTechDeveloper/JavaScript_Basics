@@ -19,9 +19,12 @@ form.addEventListener('submit',(e)=>{
 
     let animateresult = 0;
     const timer = setInterval(()=>{
-        animateresult++;
+        
         if(animateresult === score){
             clearInterval(timer);
+        }
+        else{
+            animateresult ++;
         }
         displayScore.innerHTML = `${animateresult}%`;
     },10)
