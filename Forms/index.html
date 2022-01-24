@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit the form</title>
+    <style>
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 50vh;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+        input{
+            width: 20%;
+            height: 10%;
+        }
+        #submit{
+            width: 10%;
+            height: 8%;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" name="username" placeholder="username" id="username">
+        <input type="submit" id="submit">
+    </form>
+
+    <script src="submitEvent.js"></script>
+</body>
+</html>

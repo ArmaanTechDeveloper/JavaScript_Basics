@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- including the bootstrap css for styling purposes  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        input{
+            cursor: pointer;
+        }
+        .footer{
+            width: 98vw;
+            height: 100px;
+            background-color: rgb(44, 44, 44);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            margin-top: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <title>Interactive Quiz</title>
+</head>
+<body>
+    
+
+    <!-- top section  -->
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Interactive Quiz</h2>
+        </div>
+    </div>
+
+    <!-- result section  -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You are <span class="text-primary display-4 p-3">0%</span>Weeb</p>
+        </div>
+    </div>
+
+    <!-- Quiz Section  -->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">On with the Questions </h2>
+
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. In Demon Slayer breathing technique used by Tanjiro Kamado is?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Water Breathing</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B" >
+                        <label class="form-check-label">Sun Breathing</label>
+                    </div>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. In Attack On Titan mother of Eren Yeager is?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Dina</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B" >
+                        <label class="form-check-label">Carla</label>
+                    </div>
+                </div>
+
+
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3. In Tokyo Ghoul,Ghouls cannot eat human food as it tastes bad to them and makes them sick. There is an exception to this rule. Which human food they can consume without any reactions?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Black Tea</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B" >
+                        <label class="form-check-label">Coffee</label>
+                    </div>
+                </div>
+
+
+
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4.) In One Piece,who was the man who gave Luffy his straw hat?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">Gol D Roger.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B" >
+                        <label class="form-check-label">Shanks</label>
+                    </div>
+                </div>
+
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div>
+        <a href="https://github.com/ArmaanTechDeveloper" class="footer" target="_blank">Check my github account </a>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
