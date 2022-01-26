@@ -31,7 +31,7 @@ list.addEventListener('click',(e)=>{
 const filtertodos = (term)=>{
     Array.from(list.children)
         .filter((item)=>{
-            return !item.textContent.includes(term);
+            return !item.textContent.toLowerCase().includes(term);
         })
         .forEach((itemaddclass)=>{
             itemaddclass.classList.add('filtered');
@@ -40,13 +40,14 @@ const filtertodos = (term)=>{
     // to remove the filtered class in case user deletes a letter from search
     Array.from(list.children)
         .filter((item)=>{
-            return item.textContent.includes(term);
+            return item.textContent.toLowerCase().includes(term);
         })
         .forEach((itemremoveclass)=>{
             itemremoveclass.classList.remove('filtered');
         });
 }
+
 search.addEventListener('keyup',()=>{
-    const term = search.value.trim();
+    const term = search.value.trim().toLowerCase();
     filtertodos(term);
 });
