@@ -1,0 +1,1 @@
+(()=>{const o=o=>{console.log(`Good morning ${o}`)};o("armaan"),o("atc")})();

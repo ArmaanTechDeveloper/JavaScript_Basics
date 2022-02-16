@@ -1,0 +1,16 @@
+npm init -y
+npm install @babel/core @babel/cli --save-dev
+npm install @babel/preset-env --save-dev
+
+make a file called " .babelrc " and put this in it 
+
+{
+    "presets":["@babel/preset-env"]
+}
+
+
+installing webpack
+npm install webpack webpack-cli --save-dev
+
+converting
+node_modules/.bin/Babel [filetoconvert] -o [endpoint]
