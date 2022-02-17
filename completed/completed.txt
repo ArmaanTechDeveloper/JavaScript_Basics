@@ -1,0 +1,3 @@
+completed the course just left out firebase as it was out of the new version 
+and studied a little about webpack and Babel as this is a javascript course not a webpack and babel course
+COMPLETED ON 17th Feb 2022
