@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="container" class="flex flex-col items-center space-y-3 md:flex-row md:space-x-2">
+        <div class="notesContainer flex flex-col  items-center md:flex-row md:space-x-2 ">
+
+            <!-- adding here  -->
+            <div class="note space-y-3 w-4/5 h-1/4 mt-2 bg-yellow-400 p-2 text-black selection:bg-orange-400">
+                <div class=" flex justify-end items-end"><img src="./assets/trash-can-solid.svg"  class="w-5 h-5 text-white deletenote cursor-pointer" alt=""></div>
+                <div class="title font-semibold w-full flex items-center justify-center text-2xl">
+                    This is a test note
+                </div>
+                <div class="note w-full flex items-center justify-center text-center ">
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more rec
+                </div>
+            </div>
+
+            <!-- till here  -->
+        </div>
+        <div>
+            <div class="addnotes text-6xl border-yellow-400 border-2 rounded-full w-20 h-20 hover:bg-yellow-400 ease duration-200 text-center cursor-pointer">+</div>
+        </div>
+    </div>
+
+
+    <div class="modal fixed bg-gray-100 w-screen h-screen top-0 left-0 hidden">
+        <div class="cutout absolute top-2 left-2 text-2xl cursor-pointer">x</div>
+        <form class="addnote flex w-full h-full justify-center items-center flex-col space-y-4">
+            <p class="text-lg"> Your title here</p>
+            <input type="text" name="title" id="newtitle" class="border-2 border-black w-4/5 h-12 p-2 bg-blue-700 text-white ">
+            <p class="text-lg"> Your note here</p>
+            <textarea name="note" id="" cols="30" rows="10" class="newnotedesc border-2 border-black w-4/5 h-1/4 p-2 bg-blue-700 text-white "></textarea>
+            <button class="bg-yellow-400 cursor-pointer w-1/4 h-10 rounded-lg hover:bg-yellow-500">Add Note</button>
+        </form>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>
