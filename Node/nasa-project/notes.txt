@@ -1,0 +1,3 @@
+to save something to dev dependencies
+--> npm install --save-dev nodemon
+--> "watch":"set PORT=5000&& nodemon src/server.js"
