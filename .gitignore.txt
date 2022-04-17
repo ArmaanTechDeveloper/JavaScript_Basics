@@ -1,1 +1,3 @@
-*/nasa-project/*
+*/node-modules/*
+node-modules/
+**node-modules
