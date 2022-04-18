@@ -4,11 +4,13 @@
   "description": "api for the nasa project frontend",
   "main": "index.js",
   "scripts": {
-    "watch":"nodemon src/server.js"
+    "watch": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
     "express": "^4.17.3"
   },
   "devDependencies": {
